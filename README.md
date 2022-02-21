@@ -1,8 +1,11 @@
 # Laravel2022
 
-## Tecnologias
+## Tecnologias e Bibliotecas
 * Laravel
 * Wamppserver: PHP 5, MySQL e Apache
+* Web Service: VIACEP (https://viacep.com.br/)
+* Bootstrap (https://startbootstrap.com/theme/sb-admin-2)
+* Jquery
 
 ## Estudos
 ### MVC (MODEL, VIEW AND CONTROLLER)
@@ -22,6 +25,11 @@
 
 Em PHP, $algumacoisa é uma variável
 
+## Comandos Laravel
+* php artisan migrate
+* php artisan serve
+* php artisan make:
+
 ## Rotas
 Rota é o caminho por onde o usuário vai fazer a requisição.
 
@@ -38,7 +46,39 @@ Esses dados não ficam visíveis ao usuário.
 
 Route::post('register',[RegisterController::class,'store'])->name('auth.register.store');
 
+### Exemplos
+* http://127.0.0.1:8000/register
+* http://127.0.0.1/
+* http://localhost/phpmyadmin
+
+
+
 ### Front-End
 @csrf evita requisições más-intecionadas
 
 cria um token validando as requisições
+
+### Back-End
+para receber os dados, precisa passar um parâmetro do tipo request e retornar com os dados com o método all()
+
+migrations é onde será versionado as tabelas
+
+up() quando executar a migration, ele criara as tabelas
+
+down() quando executar a migration, ela reverterá oq foi feito nas tabelas
+
+jQuery é uma biblioteca de funções JavaScript
+
+criar uma id pro cep
+
+$(document).on('blur', '#cep', function() {
+no meu docs quando perder o foco, descubra o cep
+referencio o id com #
+
+ajax é uma técnica javascript que utiliza o método XMLHttpRequest para fazer requisições assíncronas
+
+success: function(data){
+os dados que são retornados no webservice
+
+$('#uf').val(data.uf);
+varíavel id uf, preenche o campo com a data do webservice
