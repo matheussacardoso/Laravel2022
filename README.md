@@ -51,14 +51,12 @@ Route::post('register',[RegisterController::class,'store'])->name('auth.register
 * http://127.0.0.1/
 * http://localhost/phpmyadmin
 
-
-
-### Front-End
+## Front-End
 @csrf evita requisições más-intecionadas
 
 cria um token validando as requisições
 
-### Back-End
+## Back-End
 para receber os dados, precisa passar um parâmetro do tipo request e retornar com os dados com o método all()
 
 migrations é onde será versionado as tabelas
