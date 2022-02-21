@@ -60,23 +60,21 @@ cria um token validando as requisições
 para receber os dados, precisa passar um parâmetro do tipo request e retornar com os dados com o método all()
 
 migrations é onde será versionado as tabelas
-
-up() quando executar a migration, ele criara as tabelas
-
-down() quando executar a migration, ela reverterá oq foi feito nas tabelas
+* up() quando executar a migration, ele criara as tabelas
+* down() quando executar a migration, ela reverterá oq foi feito nas tabelas
 
 jQuery é uma biblioteca de funções JavaScript
 
-criar uma id pro cep
+1. é preciso criar uma id pro cep
 
-$(document).on('blur', '#cep', function() {
+2. $(document).on('blur', '#cep', function() {
 no meu docs quando perder o foco, descubra o cep
 referencio o id com #
 
 ajax é uma técnica javascript que utiliza o método XMLHttpRequest para fazer requisições assíncronas
 
-success: function(data){
+3. success: function(data){
 os dados que são retornados no webservice
 
-$('#uf').val(data.uf);
+4. $('#uf').val(data.uf);
 varíavel id uf, preenche o campo com a data do webservice
