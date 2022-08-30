@@ -78,3 +78,10 @@ os dados que são retornados no webservice
 
 4. $('#uf').val(data.uf);
 varíavel id uf, preenche o campo com a data do webservice
+
+## WEB SERVERS WITH JAVA
+Think of 2 cellphones communicating with each other. One is the web server and the another one is the web browser. 
+
+Web browser send a message (request) to the web server.
+
+Web server send a message (response) to the web browser
