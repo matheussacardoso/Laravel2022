@@ -9,9 +9,11 @@
 
 ## Estudos
 ### MVC (MODEL, VIEW AND CONTROLLER)
-* V - página dos usuários
-* M - tabela do banco de dados (obter esses dados do banco)
-* C - ponte entre a M  e V
+* VIEW - página dos usuários
+* MODEL - tabela do banco de dados (obter esses dados do banco)
+* CONTROLLER - ponte entre a M  e V
+
+<img src="https://lh6.googleusercontent.com/v61X2Hbez9ZgiIhY20DyIzCtC_XXu3h9f1FjR4CpJqxeytyOSZndcJvcYrupP7mgfQoWYyzq2P9ykMJ9FyMOv2pzAV04rPSyNdNbEx23Q4KhThReuZW0RuyKPhFdmtcN-nvpS1xU">
 
 ### Exemplo:
 1. Usuário vizualiza uma VIEW
@@ -84,4 +86,13 @@ Think of 2 cellphones communicating with each other. One is the web server and t
 
 Web browser send a message (request) to the web server.
 
-Web server send a message (response) to the web browser
+Web server send a message (response) to the web browser.
+
+REQUEST
+GET (can you get me the message/file?)
+
+RESPONSE
+HTTP/1.1 200 OK(HTTP STATUS CODES: 404 - NOT FOUND)
+
+What is a web server in fact?
+Anything that you acess on the internet (web browser) is running by a web server. So you need connect this 2 things.
